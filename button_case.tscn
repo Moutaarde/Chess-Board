@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://w5atgipxgkgv"]
+
+[ext_resource type="Script" uid="uid://buqq3opbita42" path="res://case_button.gd" id="1_yk6rm"]
+[ext_resource type="Resource" uid="uid://bsapck8605f6c" path="res://pieces/pawn.tres" id="2_kbnx5"]
+
+[node name="button_case" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1024.0
+offset_bottom = -520.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yk6rm")
+piece_on_case = ExtResource("2_kbnx5")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

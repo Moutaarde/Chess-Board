@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxqhxj5b0wvye"]
+
+[ext_resource type="Script" uid="uid://p2aqjmhws621" path="res://grid.gd" id="1_p0ybc"]
+[ext_resource type="PackedScene" uid="uid://w5atgipxgkgv" path="res://button_case.tscn" id="2_psm7c"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 8
+script = ExtResource("1_p0ybc")
+case_scene = ExtResource("2_psm7c")
