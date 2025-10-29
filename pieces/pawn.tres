@@ -1,8 +1,10 @@
 [gd_resource type="Resource" script_class="Pawn" load_steps=3 format=3 uid="uid://bsapck8605f6c"]
 
 [ext_resource type="Texture2D" uid="uid://btcvsarrf5dha" path="res://icon.svg" id="1_5yryt"]
-[ext_resource type="Script" uid="uid://b32ebhvh0p3o" path="res://pieces/scripts/pawn.gd" id="1_sa0ca"]
+[ext_resource type="Script" uid="uid://b32ebhvh0p3o" path="res://scripts/pawn.gd" id="1_sa0ca"]
 
 [resource]
 script = ExtResource("1_sa0ca")
 icone = ExtResource("1_5yryt")
+name = "Pawn"
+value = 1.0

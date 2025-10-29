@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="King" load_steps=2 format=3 uid="uid://p7ihk2rjb46u"]
+
+[ext_resource type="Script" uid="uid://dhqbpc4yumi8o" path="res://scripts/king.gd" id="1_sjffe"]
+
+[resource]
+script = ExtResource("1_sjffe")
+name = "king"

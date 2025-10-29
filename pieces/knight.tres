@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Knight" load_steps=2 format=3 uid="uid://csoseeaf4t88m"]
+
+[ext_resource type="Script" uid="uid://bqauw2xfpkw80" path="res://scripts/knight.gd" id="1_dslst"]
+
+[resource]
+script = ExtResource("1_dslst")
+name = "knight"
+value = 3.0

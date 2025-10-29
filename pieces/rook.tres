@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Rook" load_steps=2 format=3 uid="uid://dgi2dcv5hnpjm"]
+
+[ext_resource type="Script" uid="uid://dcgpacpjgvn3l" path="res://scripts/rook.gd" id="1_xmm1q"]
+
+[resource]
+script = ExtResource("1_xmm1q")
+name = "rook"
+value = 5.0
