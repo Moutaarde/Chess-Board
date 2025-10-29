@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Queen" load_steps=2 format=3 uid="uid://bqvol0haq30nn"]
 
-[ext_resource type="Script" uid="uid://dcicbu7knitwb" path="res://scripts/queen.gd" id="1_kpilu"]
+[ext_resource type="Script" uid="uid://dcicbu7knitwb" path="res://pieces/scripts/queen.gd" id="1_kpilu"]
 
 [resource]
 script = ExtResource("1_kpilu")

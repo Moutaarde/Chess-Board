@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Bishop" load_steps=2 format=3 uid="uid://b0vjgf8ybfb0e"]
 
-[ext_resource type="Script" uid="uid://b4o3ishngttye" path="res://scripts/bishop.gd" id="1_2ni7a"]
+[ext_resource type="Script" uid="uid://b4o3ishngttye" path="res://pieces/scripts/bishop.gd" id="1_2ni7a"]
 
 [resource]
 script = ExtResource("1_2ni7a")
