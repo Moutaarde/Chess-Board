@@ -6,10 +6,11 @@ class_name Pawn
 @export var value : float
 @export var white : bool
 
-
 func initialisation():
 	if white:
 		icone =  load("res://DA/Pawn_white.png") 
 	else:
 		icone =  load("res://DA/Pawn.png") 
-		
+
+func check_coup_possible(case_depart : Case, case_arrivee : Case) -> bool:
+	return true

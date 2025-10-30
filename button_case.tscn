@@ -1,17 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://w5atgipxgkgv"]
+[gd_scene load_steps=4 format=3 uid="uid://w5atgipxgkgv"]
 
 [ext_resource type="Texture2D" uid="uid://po83hhj88gix" path="res://DA/black_square.png" id="1_kbnx5"]
 [ext_resource type="Script" uid="uid://buqq3opbita42" path="res://case_button.gd" id="1_yk6rm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kbnx5"]
 
 [node name="button_case" type="Button"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1784.0
-offset_bottom = -944.0
+offset_right = -464.0
+offset_bottom = -464.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/icon_hover_color = Color(0.77445614, 0.7763303, 0.767828, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kbnx5")
 icon = ExtResource("1_kbnx5")
+flat = true
+icon_alignment = 1
 script = ExtResource("1_yk6rm")
 
 [node name="Texture_piece" type="TextureRect" parent="."]

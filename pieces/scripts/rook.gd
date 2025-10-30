@@ -13,5 +13,5 @@ func initialisation():
 	else:
 		icone =  load("res://DA/Rook.png") 
 
-func action() : 
-	pass
+func check_coup_possible(case_depart : Case, case_arrivee : Case) -> bool:
+	return true

@@ -12,3 +12,6 @@ func initialisation():
 		icone =  load("res://DA/Knight_white.png") 
 	else:
 		icone =  load("res://DA/Knight.png") 
+
+func check_coup_possible(case_depart : Case, case_arrivee : Case) -> bool:
+	return true

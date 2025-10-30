@@ -1,37 +1,28 @@
 extends Button
 class_name Case
 
+signal case_pressed(case : Case)
+
 @export var piece_on_case : Resource
 
-var colonne : String
-var ligne : String
+var colonne : int
+var ligne : int
 var case : String
 var black_case : bool = false
 
-	
-
 func _ready() -> void:
-	case = colonne + ligne
 	initialisation()
 
 func _on_button_down() -> void:
-	if piece_on_case : 
-		print(piece_on_case.name)
-		print(colonne, ligne)
-		if piece_on_case.white== true : 
-			print("blanc")
-		else : print("noir")
-		
-		
-		get_parent().has_been_press(piece_on_case,self)
-	
-	
+	if piece_on_case :
+		case_pressed.emit(self)
+
 func initialisation() :
 	if black_case:
 		icon = load("res://DA/black_square.png")
 	else:
 		icon = load("res://DA/white_square.png")
-	if ligne == "2" or ligne == "7" :
+	if ligne == 2 or ligne == 7 :
 		piece_on_case = load("res://pieces/pawn.tres")
 	if case in ["A1", "H1", "A8", "H8"]:
 		piece_on_case = load("res://pieces/rook.tres")  
@@ -44,7 +35,7 @@ func initialisation() :
 	elif case in ["E1", "E8"]:
 		piece_on_case = load("res://pieces/king.tres") 
 	if piece_on_case:
-		if int(ligne) > 6   : 
+		if ligne > 6: 
 			piece_on_case.white = false
 		else:
 			piece_on_case.white = true
